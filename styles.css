@@ -169,8 +169,6 @@ body {
     /* Adjust icon size */
     height: 36px;
     margin-right: 10px;
-    /* Set Instagram icon color */
-    filter: invert(48%) sepia(11%) saturate(1643%) hue-rotate(182deg) brightness(91%) contrast(86%) brightness(1.5) saturate(2);
 }
 
 .contact-box img.linkedin-icon {
@@ -178,8 +176,6 @@ body {
     /* Adjust icon size */
     height: 36px;
     margin-right: 10px;
-    /* Set LinkedIn icon color */
-    filter: invert(79%) sepia(8%) saturate(3201%) hue-rotate(191deg) brightness(92%) contrast(103%);
 }
 
 .contact-box img.github-icon {
@@ -187,10 +183,7 @@ body {
     /* Adjust icon size */
     height: 36px;
     margin-right: 10px;
-    /* Set GitHub icon color */
-    filter: invert(99%) sepia(0%) saturate(3627%) hue-rotate(331deg) brightness(105%) contrast(103%);
 }
-
 
 .about-box {
     background-color: rgba(243, 156, 18, 0.5);
