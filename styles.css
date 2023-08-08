@@ -1,0 +1,143 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/background.jpg');
+    /* Use correct path */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 5px;
+    /* Adjust the gap as needed */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
+    padding-left: 20%;
+    /* Adjust the value as needed */
+    box-sizing: border-box;
+    /* Include padding in total width */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    width: 450px;
+    /* Adjust width as needed */
+    height: 361.5px;
+    /* Adjust height as needed (reduced by 2%) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    /* Adjust margin as needed */
+    border-radius: 12px;
+    /* Rounded corners */
+    transition: transform 0.2s ease-in-out;
+    background-color: rgba(27, 27, 27, 0.8);
+    /* Adjust the color with opacity */
+    color: white;
+    /* Text color */
+    position: relative;
+    overflow: hidden;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.project-box {
+    background-color: rgba(52, 152, 219, 0.5);
+    border: none;
+    /* Remove border */
+}
+
+.project-box a {
+    font-size: 96px;
+    /* Adjust font size (increased by 4 times) */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* Center the text vertically */
+}
+
+.contact-box {
+    background-color: rgba(39, 174, 96, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-box a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 72px;
+    /* Adjust font size (increased by 4 times) */
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact-box a:hover {
+    transform: scale(1.1);
+    /* Pop out effect on hover */
+}
+
+.contact-box img {
+    width: 96px;
+    /* Adjust icon size */
+    height: 96px;
+    margin-right: 10px;
+}
+
+.about-box {
+    background-color: rgba(243, 156, 18, 0.5);
+}
+
+.education-box {
+    background-color: rgba(231, 76, 60, 0.5);
+}
+
+a:hover {
+    background-color: transparent;
+    /* Make link's background transparent on hover */
+    color: #333;
+}
