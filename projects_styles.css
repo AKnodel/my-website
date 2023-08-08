@@ -1,0 +1,83 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/background_projects.jpg');
+    /* Use correct path */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.projects-section,
+.certificates-section {
+    margin: 20px 0;
+}
+
+.project-box,
+.certificate-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding: 15px;
+    margin: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-box:hover,
+.certificate-box:hover {
+    transform: scale(1.05);
+}
+
+.project-header,
+.certificate-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.timestamp {
+    font-size: 14px;
+    color: #777;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
