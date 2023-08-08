@@ -39,7 +39,8 @@ body {
     /* Adjust the gap as needed */
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: calc(100vh - 100px);
+    /* Reduce the height to accommodate the strip at the bottom */
     margin: 0 auto;
     padding-left: 20%;
     /* Adjust the value as needed */
@@ -68,8 +69,8 @@ body {
 .box {
     width: 450px;
     /* Adjust width as needed */
-    height: 361.5px;
-    /* Adjust height as needed (reduced by 2%) */
+    height: 180px;
+    /* Reduced height for project box */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,8 +99,8 @@ body {
 }
 
 .project-box a {
-    font-size: 96px;
-    /* Adjust font size (increased by 4 times) */
+    font-size: 48px;
+    /* Adjust font size */
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -114,7 +115,9 @@ body {
     background-color: rgba(39, 174, 96, 0.5);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    /* Align items to the left */
+    align-items: flex-start;
 }
 
 .contact-box a {
@@ -123,9 +126,10 @@ body {
     font-weight: bold;
     display: flex;
     align-items: center;
-    margin: 10px 0;
-    font-size: 72px;
-    /* Adjust font size (increased by 4 times) */
+    margin: 5px 0;
+    /* Adjust margin */
+    font-size: 24px;
+    /* Adjust font size */
     transition: transform 0.2s ease-in-out;
 }
 
@@ -135,22 +139,41 @@ body {
 }
 
 .contact-box img {
-    width: 96px;
+    width: 36px;
     /* Adjust icon size */
-    height: 96px;
+    height: 36px;
     margin-right: 10px;
 }
 
 .about-box {
     background-color: rgba(243, 156, 18, 0.5);
+    height: 500px;
+    /* Adjusted height for about box */
 }
 
 .education-box {
     background-color: rgba(231, 76, 60, 0.5);
+    height: 500px;
+    /* Adjusted height for education box */
 }
 
 a:hover {
     background-color: transparent;
     /* Make link's background transparent on hover */
     color: #333;
+}
+
+/* Semi-transparent black strip at the bottom */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 95px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
 }
