@@ -125,6 +125,18 @@ body {
     /* Add max-width property */
 }
 
+.contact-box {
+    background-color: rgba(39, 174, 96, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Center the entire contact box content */
+    text-align: center;
+    max-width: 100%;
+    /* Add max-width property */
+}
+
 .contact-box .icon-group {
     display: flex;
     flex-direction: column;
@@ -151,13 +163,14 @@ body {
     /* Pop out effect on hover */
 }
 
+
 .contact-box img.instagram-icon {
     width: 36px;
     /* Adjust icon size */
     height: 36px;
     margin-right: 10px;
     /* Set Instagram icon color */
-    filter: invert(48%) sepia(11%) saturate(1643%) hue-rotate(182deg) brightness(91%) contrast(86%);
+    filter: invert(48%) sepia(11%) saturate(1643%) hue-rotate(182deg) brightness(91%) contrast(86%) brightness(1.5) saturate(2);
 }
 
 .contact-box img.linkedin-icon {
