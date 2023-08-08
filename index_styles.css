@@ -101,7 +101,7 @@ body {
 }
 
 .project-box a {
-    font-size: 48px;
+    font-size: 36px;
     /* Adjust font size */
     text-decoration: none;
     color: white;
@@ -113,17 +113,6 @@ body {
     /* Center the text vertically */
 }
 
-.contact-box {
-    background-color: rgba(39, 174, 96, 0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* Center the entire contact box content */
-    text-align: center;
-    max-width: 100%;
-    /* Add max-width property */
-}
 
 .contact-box {
     background-color: rgba(39, 174, 96, 0.5);
@@ -188,7 +177,11 @@ body {
 .about-box {
     background-color: rgba(243, 156, 18, 0.5);
     height: 500px;
-    /* Adjusted height for about box */
+    /* Remove fixed height */
+    padding: 20px;
+    /* Add padding for better spacing */
+    box-sizing: border-box;
+    /* Include padding in total height */
 }
 
 .education-box {
